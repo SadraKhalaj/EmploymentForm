@@ -24,10 +24,42 @@ form.addEventListener("submit",(e)=>{
       WorkYears: e.target.Work.value,
       Detail: e.target.Detail.value.trim().toLowerCase(),
     };
-
-
+ 
+  
+    
 console.log(userInfo)
 
+// if (userInfo.value == ""){
+//   alert("please fll out the form.")
+// }
+
+if (firstName.value == "") {
+  alert("please write yor firstName.");
+}
+
+if (lastName.value == "") {
+  alert("please write yor lastName.");
+}
+
+if (Email.value == "") {
+  alert("please write yor Email.");
+}
+
+if (Password.value == "") {
+  alert("please write yor password.");
+}
+
+if (Birtday.value == "") {
+  alert("please write yor Age.");
+}
+
+if (WorkYears.value == "") {
+  alert("please write yor workYears.");
+}
+
+if (Detail.value == "") {
+  alert("please write yor Address.");
+}
 
    let userfirstName = document.getElementById("firstName").value.toLowerCase();
    let userName = userfirstName ? userfirstName.split(" ")[0] : "";
