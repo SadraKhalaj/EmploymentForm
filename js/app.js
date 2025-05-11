@@ -6,7 +6,6 @@ const Password = document.querySelector("#Password");
 const Date = document.querySelector("#Date");
 const Work = document.querySelector("#Work");
 const Detail = document.querySelector("#Detail");
-const Check = document.querySelector("#Check");
 
 
 
@@ -16,48 +15,27 @@ const Check = document.querySelector("#Check");
 form.addEventListener("submit",(e)=>{
 
 
-    const userName = {
-        FirstName:e.target.firstName.value,
-        LastName:e.target.lastName.value,
+    const userInfo = {
+      FirstName: e.target.firstName.value.toLowerCase(),
+      LastName: e.target.lastName.value.toLowerCase(),
+      Email: e.target.Email.value.toLowerCase(),
+      Password: e.target.Password.value,
+      Birtday: e.target.Date.value,
+      WorkYears: e.target.Work.value,
+      Detail: e.target.Detail.value.trim().toLowerCase(),
+    };
+
+
+console.log(userInfo)
+
+
+   let userfirstName = document.getElementById("firstName").value.toLowerCase();
+   let userName = userfirstName ? userfirstName.split(" ")[0] : "";
+   alert("Hello " + userName);
+
+    if (userInfo.Detail.includes("tehran")) {
+      alert("Your product will reach you faster.");
     }
-
-    const Email = {
-        Email:e.target.Email.value,
-    }
-
-    const Password = {
-        Password:e.target.Password.value,
-    }
-
-    const Date = {
-        Birtday:e.target.Date.value,
-    }
-
-     const Work = {
-       WorkYears: e.target.Work.value,
-     }
-
-      const Detail = {
-        Detail: e.target.Detail.value,
-      }
-
-      const Check = {
-        Married: e.target.Check.value,
-      };
-
-
-console.log(userName)
-console.log(Email)
-console.log(Password)
-console.log(Date)
-console.log(Work)
-console.log(Detail)
-console.log(Check);
-
-
-
-
-
 
 e.preventDefault()
 

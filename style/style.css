@@ -51,9 +51,9 @@ input[type="number"]:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-input[type="checkbox"] {
+/* input[type="checkbox"] {
   margin-right: 8px;
-}
+} */
 
 input[type="submit"] {
   background-color: #007bff;
