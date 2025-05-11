@@ -35,7 +35,7 @@ console.log(userInfo)
    alert("Hello " + userName);
 
     if (userInfo.Detail.includes("tehran")) {
-      alert("Your product will reach you faster.");
+      alert("Your employment letter will arrive sooner.");
     }
 
 e.preventDefault()
